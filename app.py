@@ -10,12 +10,11 @@ method = st.sidebar.radio('Select:', options=['Webcam', 'Image'])
 st.sidebar.header('Art Styles Available:')
 
 style_model_name = st.sidebar.selectbox("Select style for transformation: ", style_models_name)
-st.header()
+
 hide_st_style = """
                <style>
                #MainMenu {visibility: hidden;}
-               footer {visibility: hidden;}
-               header {visibility: hidden;}
+ 
                </style>
                 """
 
