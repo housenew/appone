@@ -15,6 +15,7 @@ hide_st_style = """
                header {visibility: hidden;}
                 </style>
                 """
+st.markdown(hide_st_style, unsafe_allow_html=True)
 
 style_model_name = st.sidebar.selectbox("Select style for transformation: ", style_models_name)
 
