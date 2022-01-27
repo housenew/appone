@@ -11,13 +11,7 @@ st.sidebar.header('Art Styles Available:')
 
 style_model_name = st.sidebar.selectbox("Select style for transformation: ", style_models_name)
 
-hide_st_style = """
-               <style>
-               #MainMenu {visibility: hidden;}
- 
-               </style>
-                """
-st.markdown(hide_st_style, unsafe_allow_html=True)
+
 
 if method == 'Image':
     image_input(style_model_name)
