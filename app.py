@@ -9,7 +9,9 @@ method = st.sidebar.radio('Select:', options=['Webcam', 'Image'])
 st.sidebar.header('Art Styles Available:')
 
 style_model_name = st.sidebar.selectbox("Select style for transformation: ", style_models_name)
-
+        #MainMenu {visibility: hidden;}
+        footer {visibility: hidden;}
+        header {visibility: hidden;}
 if method == 'Image':
     image_input(style_model_name)
 else:
