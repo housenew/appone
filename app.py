@@ -7,7 +7,7 @@ st.title("Ai Art for NFT Generation")
 st.sidebar.title('Input Source:')
 method = st.sidebar.radio('Select:', options=['Webcam', 'Image'])
 st.sidebar.header('Art Styles Available:')
-st.header()
+st.header("ahoy")
 hide_st_style = """
                <style>
                #MainMenu {visibility: hidden;}
