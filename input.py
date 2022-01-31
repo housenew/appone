@@ -32,15 +32,12 @@ def image_input(style_model_name):
     generated = style_transfer(content, model)
     st.sidebar.image(content, width=300, channels='BGR')
     st.image(generated, channels='BGR', clamp=True)
-
-    result = st.sidebar.button("Mint NFT",help="This feature is coming soon")
+    results = st.sidebar.button("Mint NFT",help="This feature is coming soon")
 
 def webcam_input(style_model_name):
     st.header("Webcam Live Feed")
     WIDTH = st.sidebar.select_slider('QUALITY (May reduce the speed)', list(range(150, 501, 50)))
-    
-    result = st.sidebar.button("Mint NFT",help="This feature is coming soon")
-
+    results = st.sidebar.button("Mint NFT",help="This feature is coming soon")
     
     class NeuralStyleTransferTransformer(VideoTransformerBase):
         _width = WIDTH
