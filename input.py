@@ -39,8 +39,7 @@ def webcam_input(style_model_name):
     WIDTH = st.sidebar.select_slider('QUALITY (May reduce the speed)', list(range(150, 501, 50)))
     
     result = st.button("Mint NFT",help="This feature is coming soon")
-    if result:
-             st.write("This feature is coming soon")
+
     
     class NeuralStyleTransferTransformer(VideoTransformerBase):
         _width = WIDTH
