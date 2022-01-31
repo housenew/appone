@@ -10,7 +10,10 @@ hide_st_style = """
 from data import *
 from input import image_input, webcam_input
 
-st.markdown(hide_st_style, unsafe_allow_html=True)
+st.markdown('''<a href="javascript:document.getElementsByClassName('css-1ydp377 edgvbvh6')[1].click();">
+        <img src="https://www.freeiconspng.com/uploads/arrow-icon--myiconfinder-23.png" alt="Options" style="width:50px;height:50px;"/>
+    </a>
+    ''', hide_st_style, unsafe_allow_html=True)
 st.title("Ai Art for NFT Generation")
 st.sidebar.title('Input Source:')
 method = st.sidebar.radio('Select:', options=['Webcam', 'Image'])
