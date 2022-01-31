@@ -37,7 +37,11 @@ def image_input(style_model_name):
 def webcam_input(style_model_name):
     st.header("Webcam Live Feed")
     WIDTH = st.sidebar.select_slider('QUALITY (May reduce the speed)', list(range(150, 501, 50)))
-
+    
+    result = st.button("Mint NFT")
+    if result:
+             st.write("This feature is coming soon")
+    
     class NeuralStyleTransferTransformer(VideoTransformerBase):
         _width = WIDTH
         _model_name = style_model_name
@@ -74,7 +78,7 @@ def webcam_input(style_model_name):
 
             orig_h, orig_w = image.shape[0:2]
 
-            # cv2.resize used in a forked thread may cause memory leaks
+            
             input = np.asarray(Image.fromarray(image).resize((self._width, int(self._width * orig_h / orig_w))))
 
             with self._model_lock:
