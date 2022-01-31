@@ -33,7 +33,7 @@ def image_input(style_model_name):
     st.sidebar.image(content, width=300, channels='BGR')
     st.image(generated, channels='BGR', clamp=True)
 
-     result = st.sidebar.button("Mint NFT",help="This feature is coming soon")
+    result = st.sidebar.button("Mint NFT",help="This feature is coming soon")
 
 def webcam_input(style_model_name):
     st.header("Webcam Live Feed")
