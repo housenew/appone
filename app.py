@@ -14,7 +14,7 @@ st.markdown('''
         <a href="javascript:document.getElementsByClassName('css-cuz8q9 edgvbvh5')[1].click();">
             <p><img src="https://www.freeiconspng.com/uploads/arrow-icon--myiconfinder-23.png" alt="Options" width="50" height="50" style="float:left">Show options</p>
         </a>
-        ''',hide_st_style, unsafe_allow_html=True)
+        ''', unsafe_allow_html=True)
 st.title("Ai Art for NFT Generation")
 st.sidebar.title('Input Source:')
 method = st.sidebar.radio('Select:', options=['Webcam', 'Image'])
